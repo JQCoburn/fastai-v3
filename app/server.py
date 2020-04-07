@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_url = 'https://www.dropbox.com/s/14yx0cbwdjpuyo0/fish-id.pkl?dl=1'
+export_file_name = 'fish-id.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['black crappie', 'bluegill', 'green sunfish', 'largemouth bass', 'pumpkinseed', 'redear sunfish', 'rock bass', 'smallmouth bass', 'walleye', 'white crappie', 'yellow perch']
 path = Path(__file__).parent
 
 app = Starlette()
